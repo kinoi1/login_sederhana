@@ -1,12 +1,32 @@
 GET http://localhost:5000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjIsIm5hbWUiOiJhZ2lsIDIiLCJlbWFpbCI6ImFnaWwyQGdtYWlsLmNvbSIsImlhdCI6MTcyMTU2OTU5MiwiZXhwIjoxNzIxNTY5NjEyfQ.NdFigu8quKq70AROUU8LsDMstOVet6NC1RsFQmiKHiw
+
 
 ###
 POST http://localhost:5000/users
 Content-Type: application/json
 
 {
-    "name": "agil",
-    "email": "agil@gmail.com",
+    "name": "agil 2",
+    "email": "agil2@gmail.com",
     "password": "tes123",
-    "confPassword": "tes13"
+    "confPassword": "tes123"
 }
+
+###
+
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email" : "agil2@gmail.com",
+    "password" : "tes123"
+}
+
+
+###
+GET http://localhost:5000/token
+
+
+###
+DELETE http://localhost:5000/logout
